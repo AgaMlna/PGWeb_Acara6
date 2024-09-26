@@ -222,7 +222,7 @@
             map.addLayer(jalan); // Menambahkan GeoJSON Polyline Jalan ke dalam peta
         });
 
-        var symbologyCategorized = { "Tinggi": "#756bb1", "Sedang": "#bcbddc", "Rendah": "#efedf5" };
+        var symbologyCategorized = { "Tinggi": "#bd0026", "Sedang": "#fd8d3c", "Rendah": "#ffffb2" };
 
         // GeoJSON Polygon Jumlah Penduduk
         map.createPane('paneJumlahPenduduk');
@@ -240,35 +240,35 @@
                 };
             },
 
-            // style: function (feature) {
-            //     if (feature.properties.JML_PDDK_1 <= 2500) {
-            //         return {
-            //             opacity: 1,
-            //             color: 'black',
-            //             weight: 1.0,
-            //             fillOpacity: 0.7,
-            //             fillColor: '#efedf5'
-            //         }
-            //     }
-            //     if (feature.properties.JML_PDDK_1 > 2500 && feature.properties.JML_PDDK_1 <= 5000) {
-            //         return {
-            //             opacity: 1,
-            //             color: 'black',
-            //             weight: 1.0,
-            //             fillOpacity: 0.7,
-            //             fillColor: '#bcbddc'
-            //         }
-            //     }
-            //     if (feature.properties.JML_PDDK_1 > 5000) {
-            //         return {
-            //             opacity: 1,
-            //             color: 'black',
-            //             weight: 1.0,
-            //             fillOpacity: 0.7,
-            //             fillColor: '#756bb1'
-            //         }
-            //     }
-            // },
+            //style: function (feature) {
+            //if (feature.properties.JML_PDDK_1 <= 2500) {
+            //return {
+            //opacity: 1,
+            //color: 'black',
+            //weight: 1.0,
+            //fillOpacity: 0.7,
+            //fillColor: '#ffffb2'
+            //}
+            //}
+            //if (feature.properties.JML_PDDK_1 > 2500 && feature.properties.JML_PDDK_1 <= 5000) {
+            //return {
+            //opacity: 1,
+            //color: 'black',
+            //weight: 1.0,
+            //fillOpacity: 0.7,
+            //fillColor: '#fd8d3c'
+            //}
+            //}
+            //if (feature.properties.JML_PDDK_1 > 5000) {
+            //return {
+            // opacity: 1,
+            //color: 'black',
+            //weight: 1.0,
+            //fillOpacity: 0.7,
+            //fillColor: '#bd0026'
+            //}
+            //}
+            //},
 
             // onEachFeature
             onEachFeature: function (feature, layer) {
